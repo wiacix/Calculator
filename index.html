@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <title>Kalkulator | Kamil Wiącek</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="icon" href="favicon.jpg">
+    </head>
+    <body>
+        <main>
+            <div id="display">
+                <h1 id="score"></h1>
+            </div>
+            <div id="keyboard">
+                <form>
+                    <input type="button" id="AC" value="AC" onclick="number('reset_all')">
+                    <input type="button" id="C" value="C" onclick="number('reset')">
+                    <input type="button" id="value_7" value="7" class="button" onclick="number(7)">
+                    <input type="button" id="value_8" value="8" class="button" onclick="number(8)">
+                    <input type="button" id="value_9" value="9" class="button" onclick="number(9)">
+                    <input type="button" id="value_+" value="+" class="button_last" onclick="number('+')">
+                    <input type="button" id="value_4" value="4" class="button" onclick="number(4)">
+                    <input type="button" id="value_5" value="5" class="button" onclick="number(5)">
+                    <input type="button" id="value_6" value="6" class="button" onclick="number(6)">
+                    <input type="button" id="value_-" value="-" class="button_last" onclick="number('-')">
+                    <input type="button" id="value_1" value="1" class="button" onclick="number(1)">
+                    <input type="button" id="value_2" value="2" class="button" onclick="number(2)">
+                    <input type="button" id="value_3" value="3" class="button" onclick="number(3)">
+                    <input type="button" id="value_*" value="*" class="button_last" onclick="number('*')">
+                    <input type="button" id="value_0" value="0" class="button" onclick="number(0)">
+                    <input type="button" id="value_enter" value="LICZ" class="button" onclick="number('enter')">
+                    <input type="button" id="value_/" value="/" class="button_last" onclick="number('/')">
+                </form>
+            </div>
+            <h2>HISTORIA DZIAŁAŃ</h2>
+                <ol>
+                    <p id="history"></p>
+                </ol>
+        </main>
+    </body>
+</html>
